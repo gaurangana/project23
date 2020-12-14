@@ -1,0 +1,30 @@
+class Wall{
+    constructor(x,y,w,h){
+     
+     var option = {
+        isStatic: true ,
+         friction: 0.7 ,
+         density: 0.6
+   
+     }
+   
+     
+      this.wall =   Bodies.rectangle(x,y,w,h,option)
+      this.width = w;
+      this.height= h;
+       World.add(world,this.wall)
+    }
+   
+    display (){
+        var p = this.wall.position
+        var angle = this.wall.angle
+        push()
+        translate(p.x, p.y)
+        angleMode(RADIANS)
+        rotate(angle)
+        rectMode(CENTER)
+        fill(255)
+        rect(0,0 , this.width,this.height);
+        pop()
+    }
+   }
