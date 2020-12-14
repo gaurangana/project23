@@ -33,7 +33,7 @@ function setup() {
 	GROUNDSPRITE= createSprite(groundSprite.position.x , groundSprite.position.y,400,20)
 	//console.log(ball)
   
-	wall1 = new  Wall(275,570,20,200);
+	wall1 = new  Wall(275\\,570,20,200);
 	wall2 = new  Wall(385,651,200,20);
 	wall3 = new  Wall(495,570,20,200);
 
