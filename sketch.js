@@ -59,10 +59,11 @@ function draw() {
   background(0);
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
+  drawSprites();
   wall1.display() ;
   wall2.display() ;
   wall3.display() ;
-  drawSprites();
+  
   text(mouseX+","+mouseY,mouseX,mouseY)
 }
 
